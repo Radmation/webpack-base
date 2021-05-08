@@ -1,0 +1,230 @@
+@media (min-width: 992px) {
+  .dropdown-menu {
+    top: 67px;
+  }
+}
+
+@media(max-width: 1299px) {
+  #logo-glider {
+    overflow-x: hidden;
+
+    .glide__arrows {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 1199px) {
+  #navDropDown {
+    overflow-y: auto;
+  }
+
+  #top-bar {
+    padding: .25rem 0;
+    font-size: .8rem;
+    height: unset;
+
+    .menu-topbar-menu-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    #topbar-menu {
+      display: block;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+        display: inline-block;
+
+        &:after {
+          content: "";
+          width: 1px;
+          height: 18px;
+          background-color: $blue;
+          position: absolute;
+          right: -2px;
+          top: 5px;
+        }
+
+        &:last-of-type:after {
+          display: none;
+        }
+
+        a {
+          padding: 0.25rem .2rem;
+        }
+      }
+    }
+  }
+
+  #wrapper-navbar .navbar-toggler {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  #topbar-menu {
+    &.active {
+      display: none;
+    }
+  }
+
+  #search-container {
+    &.active {
+      animation: grow-in-mobile .4s forwards;
+    }
+  }
+  
+  .wsa_proactive {
+    display: none !important;
+  }
+
+  #custom-hero {
+    .hero-image {
+      position: static;
+      object-fit: cover;
+      width: 100%;
+      height: 400px;
+    }
+
+    #hero-form-container {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+
+      > .row {
+        margin-right: 0;
+        margin-left: 0;
+
+        > .col-lg-5 {
+          padding-left: 0;
+          padding-right: 0;
+
+          .form-wrapper {
+            background-color: $blue;
+
+            form.hs-form.stacked .hs-form-field select {
+              width: 92%;
+            }
+
+            form.hs-form.stacked .hs-form-field select[name=what_program_interests_you_],
+            form.hs-form.stacked .hs-form-field select[name=how_did_you_hear_about_us_] {
+              width: 96%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #float-form {
+    display: none;
+  }
+
+  #campus-slide {
+    .campus-image-wrapper {
+      height: 150px;
+    }
+  }
+
+  .timeline {
+    transform: none;
+    margin: initial;
+
+    li {
+      &:nth-child(odd) {
+        transform: translateX(0);
+        margin-right: 0px;
+
+        &:after {
+          right: initial;
+          left: -6px;
+          top: 50%;
+        }
+      }
+    }
+  }
+
+  .nav-links {
+    margin-bottom: 2rem;
+  }
+
+  .footer-top {
+    ul li {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .form-wrapper form.hs-form.stacked .hs_select_location:after,
+  .form-wrapper form.hs-form.stacked .hs_what_program_interests_you_:after,
+  .form-wrapper form.hs-form.stacked .hs_how_did_you_hear_about_us_:after {
+    right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #custom-hero {
+    .hero-image {
+      height: 300px;
+    }
+  }
+
+  #quote-wrapper .container.quote-icon-wrapper {
+    .quote.quote-left {
+      left: 15px;
+    }
+    .quote.quote-right {
+      right: 15px;
+    }
+
+  }
+
+  section.content {
+    h1, h2, .h1, .h2 {
+      font-size: 1.75rem;
+    }
+  }
+
+  h1, h2, .h1, .h2 {
+    font-size: 1.75rem;
+  }
+
+  .form-wrapper form.hs-form.stacked .hs_select_location:after,
+  .form-wrapper form.hs-form.stacked .hs_what_program_interests_you_:after,
+  .form-wrapper form.hs-form.stacked .hs_how_did_you_hear_about_us_:after {
+    right: 38px;
+  }
+}
+
+@media (max-width: 560px) {
+  #custom-hero #hero-form-container > .row > .col-lg-5 .form-wrapper form.hs-form.stacked .hs-form-field select {
+    width: 96%;
+  }
+  #custom-hero #hero-form-container > .row > .col-lg-5 .form-wrapper form.hs-form.stacked .hs-form-field select[name=what_program_interests_you_],
+  #custom-hero #hero-form-container > .row > .col-lg-5 .form-wrapper form.hs-form.stacked .hs-form-field select[name=how_did_you_hear_about_us_] {
+    width: 98%;
+  }
+
+  .bottom-content {
+    word-break: break-word;
+    font-size: .8rem;
+  }
+
+  .form-wrapper form.hs-form.stacked .hs_select_location:after,
+  .form-wrapper form.hs-form.stacked .hs_what_program_interests_you_:after,
+  .form-wrapper form.hs-form.stacked .hs_how_did_you_hear_about_us_:after {
+    right: 26px;
+  }
+}
+
+// iPhone iPhone 6, 6S, 7 and 8 portrait & landscape
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
+  select {
+    -webkit-appearance: none;
+    background-color: $white;
+  }
+}

@@ -1,0 +1,26 @@
+// Reusable Theme Color Generator - Text, BG, Opacity, Gradients
+@each $name, $value in $themeColors {
+  .theme-bg.#{$name} {
+    background-color: $value;
+  }
+
+  .theme-text.#{$name} {
+    color: $value
+  }
+
+  .theme-gradient.#{$name} {
+    background: $value;
+    background: -moz-linear-gradient(left, $value 0%, darken($value, 5%) 100%);
+    background: -webkit-linear-gradient(left, $value 0%, darken($value, 5%) 100%);
+    background: linear-gradient(to right, $value 0%, darken($value, 5%) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$value, endColorstr=darken($value, 5%), GradientType=1);
+  }
+
+  .theme-opacity.#{$name}:before {
+    background-color: $value;
+  }
+
+  .theme-opacity-dark.#{$name}:before {
+    background-color: darken($value, 10%);
+  }
+}

@@ -1,0 +1,58 @@
+/**
+  Theme path
+
+  - Specify the path to the theme
+*/
+$theme-path: '/wp-content/themes/beckfield/';
+
+/**
+  Font path
+
+  - Specify the path to the fonts
+*/
+$fonts-path: '#{$theme-path}/dist/fonts/';
+
+/**
+  Sass REM Fallback dependency variable
+
+   - Ensures it adds pixel code fallback for browsers that dont recognize rem
+*/
+$rem-fallback: true;
+
+/**
+  Custom google font path
+
+   - Instead of doing imports download the fonts and put in this folder. It will allow WP Fastest Cache to have CSS minification and not make the font change
+*/
+$google-font-path: '#{$fonts-path}/google/';
+$typekit-font-path: '#{$fonts-path}/typekit/';
+
+// Branding Colors
+$yellow: #ffd503;
+$blue: #073c67;
+$blue-trans: rgba(7, 60, 103, 0.75);
+$yellow-trans: rgba(255,213,3,.25);
+$light-gray: #e8e5de;
+$gray: #c7c7c7;
+$white-trans: rgba(255,255,255,.75);
+
+$text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+$transition: .3s all;
+
+/**
+  Branding Colors Variable Map
+
+   - Used in loop to create reusable text, background, opacity, and gradient classes.
+   - Requires Key Value Pair
+      - Ex. 'darkGray': $brandingColorVariable
+*/
+$themeColors: (
+  'yellow': $yellow,
+  'blue': $blue,
+  'blue-trans': $blue-trans,
+  'yellow-trans': $yellow-trans,
+  'light-gray': $light-gray,
+  'gray': $gray,
+  'white': $white,
+  'black': $black,
+)

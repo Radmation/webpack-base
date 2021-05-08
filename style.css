@@ -1,0 +1,9 @@
+/*
+Theme Name: Beckfield College
+Author: KellyBrady
+Author URI: http://kellybrady.com
+
+Description: Based off Understrap we have cleared the bloat and ensured the latest versions of all dependencies are used. We utilized webpack in order to compile and move all necessary dependency files.  IMPORTANT: All developer dependencies are not bundled with this install file. If you want the dependencies run "npm install". NOTE: This package contains already compiled versions of all npm dependencies. You should not need to install them unless you are developing on this package itself.
+
+Version: 0.0.5
+*/
